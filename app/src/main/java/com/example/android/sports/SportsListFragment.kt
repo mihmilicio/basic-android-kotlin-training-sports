@@ -51,6 +51,7 @@ class SportsListFragment : Fragment() {
             viewLifecycleOwner,
             SportsListOnBackPressedCallback(slidingPaneLayout)
         )
+        slidingPaneLayout.lockMode = SlidingPaneLayout.LOCK_MODE_LOCKED
 
         // Initialize the adapter and set it to the RecyclerView.
         val adapter = SportsAdapter {
